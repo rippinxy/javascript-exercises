@@ -1,7 +1,7 @@
 const sumAll = require('./sumAll')
 
 describe('sumAll', function() {
-  it('sums numbers within the range', function() {
+  xit('sums numbers within the range', function() {
     expect(sumAll(1, 4)).toEqual(10);
   });
   xit('works with large numbers', function() {
@@ -16,7 +16,7 @@ describe('sumAll', function() {
   xit('returns ERROR with non-number parameters', function() {
     expect(sumAll(10, "90")).toEqual('ERROR');
   });
-  xit('returns ERROR with non-number parameters', function() {
+  it('returns ERROR with non-number parameters', function() {
     expect(sumAll(10, [90, 1])).toEqual('ERROR');
   });
 });
